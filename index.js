@@ -10,6 +10,21 @@ function nowServing (katzDeliLine) {
   }
   else {
     var first = katzDeliLine.shift()
-    return "Currently servind " + first
+    return "Currently serving " + first
+  }
+}
+
+function currentLine (katzDeliLine) {
+  if (katzDeliLine.length == 0) {
+    return "There is nobody waiting to be served!"
+  }
+  else {
+    var string = "The line is currently: "
+    var counter 
+    for ( counter = 0 ; counter < katzDeliLine.length ; counter ++){
+      string = string + ", " + counter + ". " + katzDeliLine.shift()
+    }
+     
+    return "Currently serving " + first
   }
 }
