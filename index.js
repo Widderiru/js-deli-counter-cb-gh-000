@@ -3,3 +3,13 @@ function takeANumber (line,person) {
   line.push(person)
   return "Welcome, "+ person + ". You are number " + waitingposition + " in line."
 }
+
+function nowServing (katzDeliLine) {
+  if (line.length == 0) {
+    return "There is nobody waiting to be served!"
+  }
+  else {
+    var first = katzDeliLine.shift()
+    return first
+  }
+}
