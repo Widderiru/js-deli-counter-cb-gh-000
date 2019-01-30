@@ -21,7 +21,7 @@ function currentLine (katzDeliLine) {
   else {
     var string = "The line is currently: 1. " +  katzDeliLine.shift()
     var counter
-    for ( counter = 2 ; counter < katzDeliLine.length + 2; counter ++){
+    for ( counter = 2 ; counter <= katzDeliLine.length + 2; counter ++){
       string = string + ", " + counter + ". " + katzDeliLine.shift()
     }
     return string
