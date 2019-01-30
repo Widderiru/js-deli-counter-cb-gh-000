@@ -1,3 +1,4 @@
 function takeANumber (line,person) {
-  return "Welcome, Ada. You are " + ${line.length + 1} + " in line."
+  waitingposition = line.length + 1
+  return "Welcome, Ada. You are " + waitingposition + " in line."
 }
