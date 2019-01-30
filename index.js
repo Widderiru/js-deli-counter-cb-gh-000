@@ -20,11 +20,10 @@ function currentLine (katzDeliLine) {
   }
   else {
     var string = "The line is currently: "
-    var counter 
+    var counter
     for ( counter = 0 ; counter < katzDeliLine.length ; counter ++){
       string = string + ", " + counter + ". " + katzDeliLine.shift()
     }
-     
-    return "Currently serving " + first
+    return string
   }
 }
